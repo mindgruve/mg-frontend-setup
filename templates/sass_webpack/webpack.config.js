@@ -1,1 +1,1 @@
-../webpack/webpack.config.js
+../sass/webpack.config.js

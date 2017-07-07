@@ -5,7 +5,7 @@
   "main": " ",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "cd ./templates/sass_webpack && ln -s ../sass/compass.rb ./compass.rb && ln -s ../sass/compass_prod.rb ./compass_prod.rb && ln -s ../sass/webpack.config.js ./webpack.config.js"
+    "install": "cd ./templates/sass_webpack && ln -s ../sass/compass.rb ./compass.rb && ln -s ../sass/compass_prod.rb ./compass_prod.rb && ln -s ../webpack/webpack.config.js ./webpack.config.js"
   },
   "author": "Westley Mon, Mindgruve. <wmarchment@mindgruve.com>",
   "license": "ISC"

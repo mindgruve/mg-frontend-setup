@@ -1,0 +1,24 @@
+{
+  "name": "{PROJECT_NAME}",
+  "version": "1.0.0",
+  "description": "{PROJECT_DESCRIPTION}",
+  "main": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "{AUTHOR}",
+  "license": "ISC",
+  "config": {
+    "themeAssetsDir": "{ASSETS_DIR}",
+    "environment": "dev"
+  },
+  "dependencies": {
+    "bootstrap-accessibility-plugin": "git://github.com/paypal/bootstrap-accessibility-plugin",
+    "flexslider": "^2.6.3",
+    "formit": "mindgruve/formit",
+    "jquery": "^3.2.1",
+    "jquery-focuspoint": "jonom/jquery-focuspoint",
+    "jquery.equalheight": "mindgruve/jquery.equalHeight"
+  }
+}

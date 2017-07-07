@@ -1,0 +1,1 @@
+# Mindgruve Frontend Setup

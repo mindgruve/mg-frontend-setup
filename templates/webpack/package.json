@@ -1,0 +1,34 @@
+{
+  "name": "{PROJECT_NAME}",
+  "version": "1.0.0",
+  "description": "{PROJECT_DESCRIPTION}",
+  "main": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack:watch": "webpack --progress --colors --watch",
+    "pack": "webpack --progress --colors"
+  },
+  "author": "{AUTHOR}",
+  "license": "ISC",
+  "devDependencies": {
+    "exports-loader": "^0.6.3",
+    "expose-loader": "^0.7.1",
+    "imports-loader": "^0.6.5",
+    "uglify-js": "^2.7.4",
+    "webpack": "^1.13.3"
+  },
+  "config": {
+    "themeAssetsDir": "{ASSETS_DIR}",
+    "environment": "dev"
+  },
+  "dependencies": {
+    "bootstrap-accessibility-plugin": "git://github.com/paypal/bootstrap-accessibility-plugin",
+    "bootstrap-sass": "^3.3.6",
+    "flexslider": "^2.6.3",
+    "formit": "mindgruve/formit",
+    "jquery": "^3.2.1",
+    "jquery-focuspoint": "jonom/jquery-focuspoint",
+    "jquery.equalheight": "mindgruve/jquery.equalHeight"
+  }
+}

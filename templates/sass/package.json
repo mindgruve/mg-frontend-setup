@@ -1,0 +1,28 @@
+{
+  "name": "{PROJECT_NAME}",
+  "version": "1.0.0",
+  "description": "{PROJECT_DESCRIPTION}",
+  "main": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compass": "compass watch -c compass_prod.rb --poll --time | compass watch -c compass.rb --poll --time",
+    "compass-compile": "compass compile -c compass_prod.rb --force | compass compile -c compass.rb --force"
+  },
+  "author": "{AUTHOR}",
+  "license": "ISC",
+  "config": {
+    "themeAssetsDir": "{ASSETS_DIR}",
+    "environment": "dev"
+  },
+  "dependencies": {
+    "bootstrap-accessibility-plugin": "git://github.com/paypal/bootstrap-accessibility-plugin",
+    "bootstrap-sass": "^3.3.6",
+    "flexslider": "^2.6.3",
+    "formit": "mindgruve/formit",
+    "jquery": "^3.2.1",
+    "jquery-focuspoint": "jonom/jquery-focuspoint",
+    "jquery.equalheight": "mindgruve/jquery.equalHeight",
+    "mg-sass-mixins": "mindgruve/mg-sass-mixins"
+  }
+}

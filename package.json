@@ -1,0 +1,11 @@
+{
+  "name": "mg-frontend-setup",
+  "version": "1.0.0",
+  "description": "Contains templates for our frontend build tools setup",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Westley Mon, Mindgruve. <wmarchment@mindgruve.com>",
+  "license": "ISC"
+}

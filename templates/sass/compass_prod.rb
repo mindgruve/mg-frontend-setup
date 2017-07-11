@@ -19,7 +19,6 @@ on_stylesheet_saved do |file|
     filename = File.basename(file, File.extname(file))
     dir = File.dirname(file)
     File.rename(file, dir + "/" + filename + ".min" + File.extname(file))
+    FileUtils.cp_r dir + "/" + filename + ".min" + File.extname(file), target_dir
   end
-
-  FileUtils.cp_r '{ASSETS_DIR}/bin/.', target_dir
 end

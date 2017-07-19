@@ -19,6 +19,9 @@ on_stylesheet_saved do |file|
     filename = File.basename(file, File.extname(file))
     dir = File.dirname(file)
     File.rename(file, dir + "/" + filename + ".min" + File.extname(file))
-    FileUtils.cp_r dir + "/" + filename + ".min" + File.extname(file), target_dir
+    new_target_dir = dir.sub("./", "")
+    new_target_dir = new_target_dir.sub(css_dir, "")
+    new_target_dir = target_dir + new_target_dir
+    FileUtils.cp_r dir + "/" + filename + ".min" + File.extname(file), new_target_dir
   end
 end

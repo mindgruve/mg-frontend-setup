@@ -114,7 +114,15 @@ module.exports = {
             },
             {
                 test: /google-infobox/,
-                use: 'imports-loader?$=jquery!exports?InfoBox'
+                use: ['imports-loader?$=jquery', 'exports-loader?InfoBox']
+            },
+            {
+                test: /bootstrap\-accessibility\-plugin\/src\/js\/functions/,
+                use: ['imports-loader?$=jquery', 'exports-loader?uniqueId,removeMultiValAttributes,focusable,visible']
+            },
+            {
+                test: /bootstrap\-accessibility\-plugin\/src\/js\/(carousel|collapse|dropdown|modal|tab)/,
+                use: 'imports-loader?$=jquery&_BAPF=bootstrap-accessibility-plugin/src/js/functions&uniqueId=>_BAPF.uniqueId&removeMultiValAttributes=>_BAPF.removeMultiValAttributes&focusable=>_BAPF.focusable&visible=>_BAPF.visible'
             },
             {
                 test: require.resolve('jquery'),
